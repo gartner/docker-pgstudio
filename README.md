@@ -1,12 +1,12 @@
-# docker-pgstudio [![](https://badge.imagelayers.io/lukasmartinelli/pgstudio.svg)](https://imagelayers.io/?images=lukasmartinelli/pgstudio:latest 'Get your own badge on imagelayers.io')
+# docker-pgsql-studio [![](https://badge.imagelayers.io/gartneriet/pgsql-studio:latest.svg)](https://imagelayers.io/?images=gartneriet/pgsql-studio:latest 'Get your own badge on imagelayers.io')
 
 PostgreSQL Studio wrapped in a neat little Docker container.
-The image is available on [Docker Hub](https://registry.hub.docker.com/u/lukasmartinelli/pgstudio/).
+The image is available on [Docker Hub](https://registry.hub.docker.com/u/gartneriet/pgsql-studio/).
 
 Run the image
 
 ```
-docker run --rm -p 8080:8080 -t lukasmartinelli/pgstudio
+ocker run -d --name pgsql-studio --restart always -it -p 8088:80 -t gartneriet/pgsql-studio
 ```
 
 Connect to your database via `http://localhost:8080` and enter
